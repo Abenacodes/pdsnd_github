@@ -23,13 +23,13 @@ def get_filters():
     #a = message to ask user to input one of the cities.
     while True:
         a = "Enter the name of one of the three cities [Chicago, New York city, Washington] you would like to know about its bikeshare data "
-        city = str(input(a)).lower()
+        city = str(input(a)).lower()                                    #handling various user inputs in different cases
         if city in CITY_DATA:
 # TO DO: get user input for month (all, january, february, ... , june)
 #b = message to input month
             while True:
                 b = "Enter the month [from January to June] you would like to know about {}'s bikeshare data "
-                month = str(input(b.format(city.title()))).lower()
+                month = str(input(b.format(city.title()))).lower()       #handling various user inputs in different cases
                 months = ['january', 'february', 'march', 'april', 'may', 'june']
 #for a specific month found in the database
                 if month == 'all' or month in months:
@@ -37,7 +37,7 @@ def get_filters():
 # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 #c = message to input day of the week
                         c = "Enter the day of the week would you like to know "
-                        day = str(input(c)).lower()
+                        day = str(input(c)).lower()                       #handling various user inputs in different cases
                         days =['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
                         if day in days:
                             return (city, month, day)
