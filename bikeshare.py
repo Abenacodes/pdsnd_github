@@ -41,7 +41,6 @@ def get_filters():
                         days =['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
                         if day in days:
                             return (city, month, day)
-                            print("You have requested for bikeshare data for {} in the month of {} on {}s".format(city.title(), month.title,day.title))
                         else:
                             print("Invalid day! Try again")               #all other exceptions:
                 else:
