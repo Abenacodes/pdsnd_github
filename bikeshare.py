@@ -6,7 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-#t display raw data - 5 rows at a time
+#to display raw data - 5 rows at a time
 
 
 def get_filters():
